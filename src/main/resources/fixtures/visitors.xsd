@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="status" final="restriction" >
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="onhands" />
+            <xs:enumeration value="return" />
+            <xs:enumeration value="wantshere" />
+            <xs:enumeration value="wantsonhands" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="visitors">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="visitor" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cardnumber" type="xs:positiveInteger"/>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="surname" type="xs:string"/>
+                            <xs:element name="books">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="book" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="ISDN" type="xs:positiveInteger"/>
+                                                    <xs:element name="status" type="status"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
