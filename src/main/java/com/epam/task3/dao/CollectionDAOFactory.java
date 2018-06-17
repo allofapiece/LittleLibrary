@@ -1,6 +1,7 @@
 package com.epam.task3.dao;
 
 import com.epam.task3.dao.implementation.BookCollectionDAO;
+import com.epam.task3.dao.implementation.VisitorCollectionDAO;
 
 /**
  * @author Listratsenka Stanislau
@@ -15,6 +16,9 @@ public class CollectionDAOFactory implements Factory {
         switch (type) {
             case "book":
                 return new BookCollectionDAO();
+
+            case "visitor":
+                return new VisitorCollectionDAO();
 
             default:
                 return null;
