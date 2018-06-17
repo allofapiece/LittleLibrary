@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transfers>
+    <transfer>
+        <ISBN>928-5-17-034583-1</ISBN>
+        <from>5555</from>
+        <to>4444</to>
+    </transfer>
+    <transfer>
+        <ISBN>928-5-17-034583-1</ISBN>
+        <from>1111</from>
+        <to>3333</to>
+    </transfer>
+    <transfer>
+        <ISBN>978-5-389-04564-4</ISBN>
+        <from>2222</from>
+        <to>5555</to>
+    </transfer>
+</transfers>
