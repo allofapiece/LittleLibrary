@@ -60,6 +60,10 @@ public class Visitor {
         this.books = books;
     }
 
+    public void addBook(Book book) {
+        books.add(book);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

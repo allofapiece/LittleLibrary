@@ -25,7 +25,6 @@
                                             <xs:complexType>
                                                 <xs:sequence>
                                                     <xs:element name="ISDN" type="xs:positiveInteger"/>
-                                                    <xs:element name="status" type="status"/>
                                                 </xs:sequence>
                                             </xs:complexType>
                                         </xs:element>

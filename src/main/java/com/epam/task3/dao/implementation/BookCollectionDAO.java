@@ -35,4 +35,25 @@ public class BookCollectionDAO implements CollectionDAO {
         List<Book> bookCollection = LibraryCollection.getInstance().getBookCollection();
         return bookCollection.get(id);
     }
+
+    public Book findByISDN(String ISDN) {
+        List<Book> bookCollection = LibraryCollection.getInstance().getBookCollection();
+        Book targetBook = null;
+
+        for (Book book : bookCollection) {
+            if (book.getISDN().equals(ISDN)) {
+                targetBook = book;
+                break;
+            }
+        }
+
+        return targetBook;
+    }
+
+    @Override
+    public void save(Object obj) {
+        Book book = (Book) obj;
+        List<Book> bookCollection = LibraryCollection.getInstance().getBookCollection();
+        bookCollection.add(book);
+    }
 }

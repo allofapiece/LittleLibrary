@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cards>
+    <card>
+        <ISBN>973-1-65-077683-5</ISBN>
+        <title>Алихимик</title>
+        <author>Пауло Коэльо</author>
+        <pages>123</pages>
+    </card>
+    <card>
+        <ISBN>978-5-389-01095-6</ISBN>
+        <title>Шантарам</title>
+        <author>Грегори Дэвид Робертс</author>
+        <pages>487</pages>
+    </card>
+    <card>
+        <ISBN>973-1-65-077683-5</ISBN>
+        <title>Алихимик</title>
+        <author>Пауло Коэльо</author>
+        <pages>123</pages>
+    </card>
+    <card>
+        <ISBN>978-5-17-077583-5</ISBN>
+        <title>Атлант расправил плечи</title>
+        <author>Айн Ренд</author>
+        <pages>1211</pages>
+    </card>
+    <card>
+        <ISBN>978-5-17-077583-5</ISBN>
+        <title>Рассуждение о методе</title>
+        <author>Рене Декарт</author>
+        <pages>324</pages>
+    </card>
+    <card>
+        <ISBN>928-5-17-034583-1</ISBN>
+        <title>Тень горы</title>
+        <author>Грегори Дэвид Робертс</author>
+        <pages>543</pages>
+    </card>
+    <card>
+        <ISBN>978-5-699-66112-1</ISBN>
+        <title>Над пропасть во ржи</title>
+        <author>Джером Сэленджер</author>
+        <pages>401</pages>
+    </card>
+    <card>
+        <ISBN>978-5-389-04564-4</ISBN>
+        <title>Портрет Дориана Грея</title>
+        <author>Оскар Уайльд</author>
+        <pages>247</pages>
+    </card>
+    <card>
+        <ISBN>985-483-002-0</ISBN>
+        <title>Как продать Колесо</title>
+        <author>Джефф Кокс</author>
+        <pages>265</pages>
+    </card>
+</cards>

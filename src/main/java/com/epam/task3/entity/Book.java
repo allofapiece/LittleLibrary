@@ -12,6 +12,7 @@ public class Book {
     private Status status;
     private String title;
     private String author;
+    private int pages;
 
     /**
      * Default constructor
@@ -19,7 +20,7 @@ public class Book {
     public Book() {
     }
 
-    public Book(int id, String ISDN, Status status, String title, String author) {
+    public Book(int id, String ISDN, Status status, String title, String author, int pages) {
         this.id = id;
         this.ISDN = ISDN;
         this.status = status;
@@ -65,6 +66,14 @@ public class Book {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
     }
 
     @Override

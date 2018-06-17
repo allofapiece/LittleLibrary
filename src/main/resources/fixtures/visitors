@@ -8,15 +8,12 @@
         <books>
             <book>
                 <ISDN>973-1-65-077683-5</ISDN>
-                <status>wants</status>
             </book>
             <book>
                 <ISDN>928-5-17-034583-1</ISDN>
-                <status>onhands</status>
             </book>
             <book>
                 <ISDN>978-5-17-077583-5</ISDN>
-                <status>onhands</status>
             </book>
         </books>
     </visitor>
@@ -27,11 +24,9 @@
         <books>
             <book>
                 <ISDN>928-5-17-034583-1</ISDN>
-                <status>onhands</status>
             </book>
             <book>
                 <ISDN>978-5-389-04564-4</ISDN>
-                <status>return</status>
             </book>
         </books>
     </visitor>
@@ -42,7 +37,6 @@
         <books>
             <book>
                 <ISDN>978-5-389-01095-6</ISDN>
-                <status>return</status>
             </book>
         </books>
     </visitor>
@@ -53,11 +47,9 @@
         <books>
             <book>
                 <ISDN>973-1-65-077683-5</ISDN>
-                <status>wants</status>
             </book>
             <book>
                 <ISDN>978-5-699-66112-1</ISDN>
-                <status>wants</status>
             </book>
         </books>
     </visitor>
@@ -68,19 +60,15 @@
         <books>
             <book>
                 <ISDN>928-5-17-034583-1</ISDN>
-                <status>wantshere</status>
             </book>
             <book>
                 <ISDN>978-5-17-077583-5</ISDN>
-                <status>wantsonnhands</status>
             </book>
             <book>
                 <ISDN>973-1-65-077683-5</ISDN>
-                <status>onhands</status>
             </book>
             <book>
                 <ISDN>978-5-389-01095-6</ISDN>
-                <status>wantshere</status>
             </book>
         </books>
     </visitor>

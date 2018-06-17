@@ -37,4 +37,11 @@ public class VisitorCollectionDAO implements CollectionDAO {
         Map<Integer, Visitor> visitorCollection = LibraryCollection.getInstance().getVisitorCollection();
         return visitorCollection.get(id);
     }
+
+    @Override
+    public void save(Object obj) {
+        Visitor visitor = (Visitor) obj;
+        Map<Integer, Visitor> visitorCollection = LibraryCollection.getInstance().getVisitorCollection();
+        visitorCollection.put(visitor.getCardNumber(), visitor);
+    }
 }

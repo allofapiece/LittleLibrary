@@ -13,4 +13,9 @@ public interface CollectionDAO<T> {
      * @throws EntityNotFoundException
      */
     T find(int id) throws EntityNotFoundException;
+
+    /**
+     * @param obj
+     */
+    void save(T obj);
 }
