@@ -10,6 +10,13 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+/**
+ * SAX handler for reading visitor.xml file and getting information about
+ * library visitors.
+ *
+ * @author Listratsenka Stanislau
+ * @version 1.0
+ */
 public class VisitorHandler extends DefaultHandler {
     private static final Logger LOG = Logger.getLogger(VisitorHandler.class);
     private VisitorCollectionDAO visitorCollectionDAO;
@@ -18,6 +25,9 @@ public class VisitorHandler extends DefaultHandler {
     private Book book;
     private String element;
 
+    /**
+     * Default constructor
+     */
     public VisitorHandler() {
         visitorCollectionDAO = new VisitorCollectionDAO();
         bookCollectionDAO = new BookCollectionDAO();
@@ -25,12 +35,12 @@ public class VisitorHandler extends DefaultHandler {
 
     @Override
     public void startDocument(){
-        LOG.debug("Started parsing of document - visitors.xml");
+        LOG.debug("Started parsing of document - visitors.xml.xml");
     }
 
     @Override
     public void endDocument() throws SAXException {
-        LOG.debug("Ended parsing of document - visitors.xml");
+        LOG.debug("Ended parsing of document - visitors.xml.xml");
     }
 
     @Override
@@ -74,8 +84,8 @@ public class VisitorHandler extends DefaultHandler {
                 visitor.setSurname(new String(ch, start, length));
                 break;
 
-            case "ISDN":
-                book = bookCollectionDAO.findByISDN(new String(ch, start, length));
+            case "bookid":
+                book = bookCollectionDAO.findById(Long.parseLong(new String(ch, start, length)));
                 break;
         }
     }

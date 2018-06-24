@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="transfers">
+    <xs:element name="orders">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="transfer" maxOccurs="unbounded">
+                <xs:element name="order" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
+                            <xs:element name="visitor" type="xs:positiveInteger"/>
                             <xs:element name="ISBN" type="xs:string"/>
-                            <xs:element name="from" type="xs:positiveInteger"/>
-                            <xs:element name="to" type="xs:positiveInteger"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

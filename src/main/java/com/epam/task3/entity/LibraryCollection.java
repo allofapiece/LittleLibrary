@@ -3,7 +3,7 @@ package com.epam.task3.entity;
 import java.util.*;
 
 /**
- * This class stores all books and visitors information
+ * This class stores all books and visitors.xml information
  * of library. {@code LibraryCollection} is a Singleton
  * and has synchronized method for multi-threading.
  *
@@ -13,13 +13,17 @@ import java.util.*;
 public class LibraryCollection {
     private static volatile LibraryCollection instance;
 
-    private List<Book> bookCollection = new LinkedList<>();
-    private Map<Integer, Visitor> visitorCollection = new HashMap<>();
+    private List<Book> bookCollection;
+    private Map<Integer, Visitor> visitorCollection;
+    private List<Order> orderCollection;
 
     /**
      * Private default constructor
      */
     private LibraryCollection() {
+        bookCollection = new LinkedList<>();
+        visitorCollection = new HashMap<>();
+        orderCollection = new LinkedList<>();
     }
 
     /**
@@ -53,11 +57,11 @@ public class LibraryCollection {
         this.visitorCollection = visitorCollection;
     }
 
-    public Book getBook(int index) {
-        return bookCollection.get(index);
+    public List<Order> getOrderCollection() {
+        return orderCollection;
     }
 
-    public synchronized void add(Book book) {
-        bookCollection.add(book);
+    public synchronized void setOrderCollection(List<Order> orderCollection) {
+        this.orderCollection = orderCollection;
     }
 }

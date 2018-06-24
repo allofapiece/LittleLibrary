@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orders>
+    <order>
+        <visitor>1111</visitor>
+        <ISBN>928-5-17-034583-1</ISBN>
+    </order>
+    <order>
+        <visitor>1111</visitor>
+        <ISBN>978-5-17-077583-5</ISBN>
+    </order>
+    <order>
+        <visitor>2222</visitor>
+        <ISBN>978-5-389-01095-6</ISBN>
+    </order>
+    <order>
+        <visitor>3333</visitor>
+        <ISBN>973-1-65-077683-5</ISBN>
+    </order>
+    <order>
+        <visitor>4444</visitor>
+        <ISBN>978-5-17-077583-5</ISBN>
+    </order>
+    <order>
+        <visitor>5555</visitor>
+        <ISBN>978-5-17-077583-5</ISBN>
+    </order>
+    <order>
+        <visitor>5555</visitor>
+        <ISBN>985-483-002-0</ISBN>
+    </order>
+</orders>

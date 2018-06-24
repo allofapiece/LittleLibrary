@@ -3,8 +3,6 @@ package com.epam.task3.dao.implementation;
 import com.epam.task3.dao.CollectionDAO;
 import com.epam.task3.entity.Book;
 import com.epam.task3.entity.LibraryCollection;
-import com.epam.task3.exception.EntityNotFoundException;
-import org.apache.log4j.Logger;
 
 import java.util.List;
 
@@ -16,7 +14,6 @@ import java.util.List;
  * @version 1.0
  */
 public class BookCollectionDAO implements CollectionDAO {
-    private static final Logger LOG = Logger.getLogger(BookCollectionDAO.class);
 
     /**
      * Default constructor
@@ -29,19 +26,24 @@ public class BookCollectionDAO implements CollectionDAO {
      *
      * @param id
      * @return Collection
-     * @throws EntityNotFoundException
      */
-    public Book find(int id) throws EntityNotFoundException {
+    public Book find(int id){
         List<Book> bookCollection = LibraryCollection.getInstance().getBookCollection();
         return bookCollection.get(id);
     }
 
-    public Book findByISDN(String ISDN) {
+    /**
+     * Modification of find operation, when required
+     * find book with specific id.
+     *
+     * @return List
+     */
+    public Book findById(long id) {
         List<Book> bookCollection = LibraryCollection.getInstance().getBookCollection();
         Book targetBook = null;
 
         for (Book book : bookCollection) {
-            if (book.getISDN().equals(ISDN)) {
+            if (book.getBookId() == id) {
                 targetBook = book;
                 break;
             }
@@ -50,8 +52,21 @@ public class BookCollectionDAO implements CollectionDAO {
         return targetBook;
     }
 
+    /**
+     * Modification of find operation, when required
+     * all items of collection.
+     *
+     * @return List
+     */
+    public List<Book> findAll() {
+        return LibraryCollection.getInstance().getBookCollection();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void save(Object obj) {
+    public synchronized void save(Object obj) {
         Book book = (Book) obj;
         List<Book> bookCollection = LibraryCollection.getInstance().getBookCollection();
         bookCollection.add(book);

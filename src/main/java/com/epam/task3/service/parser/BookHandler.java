@@ -8,14 +8,28 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
+import java.util.concurrent.atomic.AtomicLong;
+
+/**
+ * SAX handler for reading book.xml file and getting information about
+ * library books.
+ *
+ * @author Listratsenka Stanislau
+ * @version 1.0
+ */
 public class BookHandler extends DefaultHandler {
     private static final Logger LOG = Logger.getLogger(BookHandler.class);
     private BookCollectionDAO bookCollectionDAO;
     private Book book;
     private String element;
+    private AtomicLong atomicLong;
 
+    /**
+     * Default constructor
+     */
     public BookHandler() {
         bookCollectionDAO = new BookCollectionDAO();
+        atomicLong = new AtomicLong();
     }
 
     @Override
@@ -35,6 +49,7 @@ public class BookHandler extends DefaultHandler {
         switch (element) {
             case "book":
                 book = new Book();
+                book.setBookId(atomicLong.getAndIncrement());
                 book.setStatus(Status.AVAILABLE);
                 break;
         }
@@ -52,7 +67,7 @@ public class BookHandler extends DefaultHandler {
     public void characters(char[] ch, int start, int length) throws SAXException {
         switch (element) {
             case "ISBN":
-                book.setISDN(new String(ch, start, length));
+                book.setISBN(new String(ch, start, length));
                 break;
 
             case "title":
