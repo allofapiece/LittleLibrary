@@ -1,21 +1,22 @@
 package com.epam.task3.dao;
 
-import com.epam.task3.exception.EntityNotFoundException;
-
 /**
  * @author Listratsenka Stanislau
  * @version 1.0
  */
 public interface CollectionDAO<T> {
     /**
+     * One of the CRUD operations, that finds one element.
+     *
      * @param id id of necessary entity
      * @return T
-     * @throws EntityNotFoundException
      */
-    T find(int id) throws EntityNotFoundException;
+    T find(int id);
 
     /**
-     * @param obj
+     * Saves object in collection.
+     *
+     * @param obj Object, that need to save.
      */
     void save(T obj);
 }

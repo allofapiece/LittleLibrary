@@ -7,13 +7,16 @@
         <surname>Кухальчук</surname>
         <books>
             <book>
-                <ISDN>973-1-65-077683-5</ISDN>
+                <bookid>0</bookid>
+                <ISBN>973-1-65-077683-5</ISBN>
             </book>
             <book>
-                <ISDN>928-5-17-034583-1</ISDN>
+                <bookid>1</bookid>
+                <ISBN>928-5-17-034583-1</ISBN>
             </book>
             <book>
-                <ISDN>978-5-17-077583-5</ISDN>
+                <bookid>5</bookid>
+                <ISBN>978-5-17-077583-5</ISBN>
             </book>
         </books>
     </visitor>
@@ -23,10 +26,12 @@
         <surname>Серябкина</surname>
         <books>
             <book>
-                <ISDN>928-5-17-034583-1</ISDN>
+                <bookid>2</bookid>
+                <ISBN>928-5-17-034583-1</ISBN>
             </book>
             <book>
-                <ISDN>978-5-389-04564-4</ISDN>
+                <bookid>3</bookid>
+                <ISBN>978-5-389-04564-4</ISBN>
             </book>
         </books>
     </visitor>
@@ -34,42 +39,42 @@
         <cardnumber>3333</cardnumber>
         <name>Виктор</name>
         <surname>Мухарчук</surname>
-        <books>
+       <!-- <books>
             <book>
-                <ISDN>978-5-389-01095-6</ISDN>
+                <ISBN>978-5-389-01095-6</ISBN>
             </book>
-        </books>
+        </books>-->
     </visitor>
     <visitor>
         <cardnumber>4444</cardnumber>
         <name>Дмитрий</name>
         <surname>Просидский</surname>
-        <books>
+       <!-- <books>
             <book>
-                <ISDN>973-1-65-077683-5</ISDN>
+                <ISBN>973-1-65-077683-5</ISBN>
             </book>
             <book>
-                <ISDN>978-5-699-66112-1</ISDN>
+                <ISBN>978-5-699-66112-1</ISBN>
             </book>
-        </books>
+        </books>-->
     </visitor>
     <visitor>
         <cardnumber>5555</cardnumber>
         <name>Станислав</name>
         <surname>Леонидов</surname>
-        <books>
+        <!--<books>
             <book>
-                <ISDN>928-5-17-034583-1</ISDN>
+                <ISBN>928-5-17-034583-1</ISBN>
             </book>
             <book>
-                <ISDN>978-5-17-077583-5</ISDN>
+                <ISBN>978-5-17-077583-5</ISBN>
             </book>
             <book>
-                <ISDN>973-1-65-077683-5</ISDN>
+                <ISBN>973-1-65-077683-5</ISBN>
             </book>
             <book>
-                <ISDN>978-5-389-01095-6</ISDN>
+                <ISBN>978-5-389-01095-6</ISBN>
             </book>
-        </books>
+        </books>-->
     </visitor>
 </visitors>

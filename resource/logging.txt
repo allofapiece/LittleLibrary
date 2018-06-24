@@ -1,0 +1,238 @@
+2018-06-19 19:48:09 ERROR LittleLibrary:30 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\fixtures\books.xml (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:25)
+2018-06-19 19:48:52 ERROR LittleLibrary:30 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\resources\fixtures\books.xml (Системе не удается найти указанный путь)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:25)
+2018-06-19 19:51:36 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:52:15 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:52:15 ERROR LittleLibrary:32 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\src\main\resources\fixtures\visitors.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:28)
+2018-06-19 19:52:18 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:54:03 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:54:26 ERROR LittleLibrary:32 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\src\main\resources\fixtures\visitors.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:28)
+2018-06-19 19:54:55 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:54:55 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:54:55 ERROR LittleLibrary:32 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\src\main\resources\fixtures\visitors.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:28)
+2018-06-19 19:55:41 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:55:41 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:55:41 ERROR LittleLibrary:32 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\src\main\resources\fixtures\visitors.xml.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:28)
+2018-06-19 19:56:10 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:56:10 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:56:10 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-19 19:58:06 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:58:06 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:58:20 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-19 19:58:28 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:58:28 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:58:29 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-19 19:58:33 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:58:33 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:58:33 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-19 19:58:37 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 19:58:37 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 19:58:51 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-19 20:04:23 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-19 20:04:23 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-19 20:04:23 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-19 20:05:54 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 00:36:49 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-22 00:36:49 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-22 00:36:49 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 00:36:49 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 00:46:22 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-22 00:46:22 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-22 00:46:22 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 00:46:22 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 00:48:04 DEBUG BookHandler:23 - Started parsing of document - books.xml
+2018-06-22 00:48:04 DEBUG BookHandler:28 - Ended parsing of document - books.xml
+2018-06-22 00:48:04 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 00:48:04 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 00:52:02 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-22 00:52:02 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-22 00:52:02 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 00:52:02 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 00:54:51 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-22 00:54:51 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-22 00:54:51 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 00:54:58 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 00:57:42 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-22 00:57:42 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-22 00:57:42 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 00:57:42 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-22 01:05:46 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-22 01:05:46 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-22 01:05:46 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-22 01:05:46 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-23 14:06:04 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-23 14:06:04 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-23 14:06:04 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-23 14:06:04 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 18:14:13 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 18:14:14 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 18:14:14 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 18:14:14 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 18:14:14 ERROR LittleLibrary:42 - Can't parse files.
+java.io.FileNotFoundException: D:\Programming\Projects\Java\task3\src\main\resources\fixtures\orders.xml (Не удается найти указанный файл)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:623)
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:148)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:805)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:327)
+	at javax.xml.parsers.SAXParser.parse(SAXParser.java:328)
+	at com.epam.task3.main.LittleLibrary.loadMainData(LittleLibrary.java:38)
+	at com.epam.task3.main.LittleLibrary.main(LittleLibrary.java:23)
+2018-06-24 18:15:05 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 18:15:05 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 18:15:05 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 18:15:05 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 18:15:05 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 18:15:05 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 18:16:15 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 18:16:15 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 18:16:15 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 18:16:15 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 18:16:15 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 18:16:15 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 18:56:22 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 18:56:22 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 18:56:22 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 18:56:22 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 18:56:22 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 18:56:22 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 18:56:56 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 18:56:56 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 18:56:56 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 18:56:56 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 18:56:56 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 18:56:56 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 19:00:47 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 19:00:47 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 19:00:47 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 19:00:47 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 19:00:47 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 19:00:47 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 19:03:08 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 19:03:08 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 19:03:08 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 19:03:08 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 19:03:08 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 19:03:08 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 19:03:35 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 19:03:35 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 19:03:35 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 19:03:35 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 19:03:35 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 19:03:35 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml
+2018-06-24 19:08:01 DEBUG BookHandler:27 - Started parsing of document - books.xml
+2018-06-24 19:08:01 DEBUG BookHandler:32 - Ended parsing of document - books.xml
+2018-06-24 19:08:01 DEBUG VisitorHandler:28 - Started parsing of document - visitors.xml.xml
+2018-06-24 19:08:01 DEBUG VisitorHandler:33 - Ended parsing of document - visitors.xml.xml
+2018-06-24 19:08:01 DEBUG OrderHandler:30 - Started parsing of document - orders.xml
+2018-06-24 19:08:01 DEBUG OrderHandler:35 - Ended parsing of document - orders.xml

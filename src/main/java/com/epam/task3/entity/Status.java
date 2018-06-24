@@ -12,13 +12,13 @@ public enum Status {
 
     /**
      * This book is a available at this
-     * moment and can be taken by the visitors.
+     * moment and can be taken by the visitors.xml.
      */
     AVAILABLE,
 
     /**
      * This book on hands now and
-     * can't be used by other visitors in current
+     * can't be used by other visitors.xml in current
      * reading session, if book owner wont transfer
      * this book to other visitor.
      */

@@ -1,14 +1,18 @@
 package com.epam.task3.entity;
 
+import org.apache.log4j.Logger;
+
 /**
  * The book entity is a part of subject area.
  *
  * @author Listratsenka Stanislau
  * @version 1.0
  */
-public class Book {
-    private int id;
-    private String ISDN;
+public class Book extends Thread{
+    private static final double READING_TIME_COEFFICIENT = 10;
+    private static final Logger LOG = Logger.getLogger(Book.class);
+    private long bookId;
+    private String ISBN;
     private Status status;
     private String title;
     private String author;
@@ -20,35 +24,44 @@ public class Book {
     public Book() {
     }
 
-    public Book(int id, String ISDN, Status status, String title, String author, int pages) {
-        this.id = id;
-        this.ISDN = ISDN;
-        this.status = status;
-        this.title = title;
-        this.author = author;
+    /**
+     * Implementation of actions of multi-threading. Sleep method
+     * is a reading process of the book from real life. The time
+     * is determined by multiplying the number of pages by the
+     * {@code READING_TIME_COEFFICIENT}
+     */
+    @Override
+    public void run() {
+        LOG.info("Started reading the book with id = " + bookId);
+        try {
+            sleep((long) (pages * READING_TIME_COEFFICIENT));
+        } catch (InterruptedException e) {
+            LOG.error("Can't read the book with id = " + bookId, e);
+        }
+        LOG.info("Finished reading the book with id = " + bookId);
     }
 
-    public int getId() {
-        return id;
+    public long getBookId() {
+        return bookId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setBookId(long bookId) {
+        this.bookId = bookId;
     }
 
-    public String getISDN() {
-        return ISDN;
+    public String getISBN() {
+        return ISBN;
     }
 
-    public void setISDN(String ISDN) {
-        this.ISDN = ISDN;
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
     }
 
     public Status getStatus() {
         return status;
     }
 
-    public void setStatus(Status status) {
+    public synchronized void setStatus(Status status) {
         this.status = status;
     }
 
@@ -83,8 +96,8 @@ public class Book {
 
         Book book = (Book) o;
 
-        if (id != book.id) return false;
-        if (ISDN != null ? !ISDN.equals(book.ISDN) : book.ISDN != null) return false;
+        if (bookId != book.bookId) return false;
+        if (ISBN != null ? !ISBN.equals(book.ISBN) : book.ISBN != null) return false;
         if (status != book.status) return false;
         if (title != null ? !title.equals(book.title) : book.title != null) return false;
         return author != null ? author.equals(book.author) : book.author == null;
@@ -92,11 +105,12 @@ public class Book {
 
     @Override
     public int hashCode() {
-        int result = id;
-        result = 31 * result + (ISDN != null ? ISDN.hashCode() : 0);
+        int result = (int) (bookId ^ (bookId >>> 32));
+        result = 31 * result + (ISBN != null ? ISBN.hashCode() : 0);
         result = 31 * result + (status != null ? status.hashCode() : 0);
         result = 31 * result + (title != null ? title.hashCode() : 0);
         result = 31 * result + (author != null ? author.hashCode() : 0);
+        result = 31 * result + pages;
         return result;
     }
 }
